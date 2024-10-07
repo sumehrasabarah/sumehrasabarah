@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bread Tea Talk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            text-align: center;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        .quality, .find-us, .contact {
+            margin-top: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+        .contact input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact input[type="submit"]:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bread Tea Talk</h1>
+    <p>The Finest Bakery Products in the Country</p>
+</header>
+
+<nav>
+    <a href="#products">Our Products</a>
+    <a href="#quality">Quality Promise</a>
+    <a href="#find-us">Where to Find Us</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<div class="container">
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://scontent.fdac24-5.fna.fbcdn.net/v/t1.6435-9/149761701_188631693047987_1659442940043870419_n.jpg?stp=dst-jpg_s552x414&_nc_cat=103&ccb=1-7&_nc_sid=50ad20&_nc_ohc=Bbune9wOfvYQ7kNvgFIjT0k&_nc_ht=scontent.fdac24-5.fna&_nc_gid=Ac0v9vSf-pCyOFMT5eQac5B&oh=00_AYAgA5rg89XUx2sGdVrLbADpoeZOYz7vAI3HiC996tQ9TQ&oe=67274D5E" alt="White Bread">
+                <h3>White Bread</h3>
+                <p>Our soft and fluffy white bread is perfect for sandwiches or toast. Made with the finest flour and baked to perfection.</p>
+            </div>
+            <div class="product">
+                <img src="multigrain-bread.jpg" alt="Multigrain Bread">
+                <h3>Multigrain Bread</h3>
+                <p>Hearty and wholesome, our multigrain bread is packed with nutritious grains, delivering both taste and health in every slice.</p>
+            </div>
+            <div class="product">
+                <img src="https://scontent.fdac24-5.fna.fbcdn.net/v/t1.6435-9/145827827_179632577281232_69878471025061653_n.jpg?stp=dst-jpg_s552x414&_nc_cat=102&ccb=1-7&_nc_sid=50ad20&_nc_ohc=TkJj2JqEKeIQ7kNvgGpp4tZ&_nc_ht=scontent.fdac24-5.fna&_nc_gid=ANzAcGPN5nTf3d83IY5mRIg&oh=00_AYBstVMemKoalTYBA_73HnufpIahtPxdO1vIMIlKvZK82A&oe=6727431F" alt="Honey Cake">
+                <h3>Honey Cake</h3>
+                <p>A sweet indulgence, our honey cake is rich and moist, made with pure honey and perfect for dessert or tea time.</p>
+            </div>
+            <div class="product">
+                <img src="https://scontent.fdac24-1.fna.fbcdn.net/v/t1.6435-9/149397881_185863116658178_1326721556980738456_n.jpg?stp=dst-jpg_s552x414&_nc_cat=100&ccb=1-7&_nc_sid=50ad20&_nc_ohc=vA_ho92lgW8Q7kNvgF5-g9O&_nc_ht=scontent.fdac24-1.fna&_nc_gid=Ac0v9vSf-pCyOFMT5eQac5B&oh=00_AYCASSOD0O9WstxmnTiwQQ6YBdDJg9caswFi3Z5bkzD-XA&oe=6727605A" alt="Cream Bun">
+                <h3>Cream Bun</h3>
+                <p>Soft buns filled with light, sweet cream for a delightful treat that melts in your mouth with every bite.</p>
+            </div>
+            <div class="product">
+                <img src="https://scontent.fdac24-4.fna.fbcdn.net/v/t1.6435-9/142802811_171991368045353_5678881110147711672_n.jpg?stp=dst-jpg_s552x414&_nc_cat=109&ccb=1-7&_nc_sid=50ad20&_nc_ohc=N-b1NosO-4sQ7kNvgHNXfnw&_nc_ht=scontent.fdac24-4.fna&_nc_gid=ANzAcGPN5nTf3d83IY5mRIg&oh=00_AYDCW9Bu49S5vr5i7nUfsoBDtAepnjqMPh2L0sEvvo35xA&oe=67276546
+                " alt="Coconut Milk Bun">
+                <h3>Coconut Milk Buns</h3>
+                <p>A tropical twist on the classic bun, our coconut milk buns are soft, fragrant, and filled with a subtle coconut flavor.</p>
+            </div>
+            <div class="product">
+                <img src="https://scontent.fdac24-5.fna.fbcdn.net/v/t1.6435-9/151782263_188631633047993_4985184057258344782_n.jpg?stp=dst-jpg_s552x414&_nc_cat=102&ccb=1-7&_nc_sid=50ad20&_nc_ohc=MxmdCUERouUQ7kNvgGdbYvk&_nc_ht=scontent.fdac24-5.fna&_nc_gid=Ac0v9vSf-pCyOFMT5eQac5B&oh=00_AYBmwxneoW8vFLL-jT_fGzCiSbkhyFruCJm_dt51DYbc9Q&oe=67276B0D
+                " alt="Burger Bun">
+                <h3>Burger Buns</h3>
+                <p>Light and fluffy, our burger buns are perfect for any homemade or gourmet burger, bringing a soft texture to every bite.</p>
+            </div>
+            <div class="product">
+                <img src="https://scontent.fdac24-5.fna.fbcdn.net/v/t1.6435-9/140707531_170580151519808_6385436890678127674_n.jpg?stp=dst-jpg_s552x414&_nc_cat=103&ccb=1-7&_nc_sid=50ad20&_nc_ohc=58bdTWQju44Q7kNvgFdeN7w&_nc_ht=scontent.fdac24-5.fna&_nc_gid=ANzAcGPN5nTf3d83IY5mRIg&oh=00_AYAgHfZlsiZBtoUqkuAZD-SrfEMDMGKby6_KZyL-kujHMA&oe=67277497" alt="Hot Dog Bun">
+                <h3>Hot Dog Buns</h3>
+                <p>Our hot dog buns are soft and slightly sweet, offering the perfect complement to any hot dog or sausage creation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="quality" class="quality">
+        <h2>Quality Promise</h2>
+        <p>
+            At Bread Tea Talk, we are committed to delivering the highest quality baked goods. 
+            Each of our products, from our soft white bread to our decadent honey cakes, is made 
+            with the finest ingredients sourced from trusted local producers. Our passion for 
+            excellence is reflected in every bite, making us one of the finest bakeries in the country.
+        </p>
+    </section>
+
+    <section id="find-us" class="find-us">
+        <h2>Where to Find Us</h2>
+        <p>
+            You can find Bread Tea Talk products in select grocery stores across the country, 
+            including:
+        </p>
+        <ul>
+            <li>Shwapno</li>
+            <li>Seoul Mart</li>
+            <li>Dhali</li>
+            <li>Bengal Meat</li>
+            <li>Moscow</li>
+            <li>And more...</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <ul>
+           <li>Email: breadteatalk@gmail.com</li>
+           <li>Whatsapp: +880 1819 222488</li>
+        </ul>
+        <a href= "https://www.facebook.com/breadteatalk" target="_blank">Check out our Facebook page</a>
+        <p> <h4>Manufactured at:</h4>24/1 Bir Uttam A N M Nuruzzaman Sarak Shaymoli Hall Building Dhaka, 1207</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Bread Tea Talk | All Rights Reserved</p>
+</footer>
+</body>
+</html>
